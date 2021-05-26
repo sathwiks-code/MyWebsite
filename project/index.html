@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/searchTable.css">
     <title>My Website</title>
   </head>
   <body>
     <nav>
+      <div class="nav-title">
+        <h1 class="nav-text"><header><h1>MyWebsite</h1></header></h1>
+      </div>
       <div class="hamburger">
         <div class="Line"></div>
         <div class="Line"></div>
@@ -20,6 +25,41 @@
         <li class="list-link"><a class="link" href="#">Projects</a></li>
       </ul>
     </nav>
-    <script src="./src/main.js"></script>
+    
+    <main>
+        <div class="container">
+          <div class="filter-post">
+              <input type="text" id="filter" placeholder="Filter Posts">
+          </div>
+
+          <table class="content-table" id="tableRecord">
+            <thead>
+              <tr>
+                <th>SN</th>
+                <th>Project Name</th>
+                <th>Github Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active-row">
+                <td>1</td>
+                <td>Domenic</td>
+                <td><a href="#">LINK</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sally</td>
+                <td><a href="#">LINK</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td><a href="#">LINK</a></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </main>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

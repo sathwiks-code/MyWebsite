@@ -1,16 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
+/*Tags*/
 
 nav {
   height: 10vh;
-  background: #5b78c7;
+  background: #009879;
+}
+
+nav {
+  position: relative;
+}
+
+/*Classes*/
+
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-text {
+  margin-top: 10px;
+  font-size: 25px;
+  color: white;
 }
 
 .nav-links {
@@ -36,10 +46,6 @@ nav {
   margin: 5px;
 }
 
-nav {
-  position: relative;
-}
-
 .hamburger {
   position: absolute;
   cursor: pointer;
@@ -51,18 +57,18 @@ nav {
 
 .nav-links {
   position: fixed;
-  background: #5b78c7;
+  background: #009879;
   height: 100vh;
   width: 100%;
   flex-direction: column;
-  clip-path: circle(100px at 90% -10%);
-  -webkit-clip-path: circle(100px at 90% -10%);
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -20%);
   transition: all 1s ease-out;
   pointer-events: none;
 }
 .nav-links.open {
-  clip-path: circle(2030px at 90% -10%);
-  -webkit-clip-path: circle(2030 at 90% -10%);
+  clip-path: circle(2055px at 90% -20%);
+  -webkit-clip-path: circle(2055 at 90% -20%);
   pointer-events: all;
 }
 .landing {
